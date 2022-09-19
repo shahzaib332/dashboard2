@@ -24,7 +24,11 @@
                  
                         <img src="images/logo-light.png" alt="loading" href="index.html">
                    
-               
+               <div class="bar">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+               </div>
            
         <!-- top nav right elemennts-->
         
@@ -36,30 +40,44 @@
                 
         
             </div>
-            <div class="languagecontainer">
-                <button>
-                    <img src="images/us.jpg" height="" alt="...">
-                    <span class="language">English </span>
+            <div class="languagecontainer" >
+                <button onclick="language()" class="dropbtn">
+                    <img src="images/us.jpg" hreft="#" alt="...">
+                    <span class="language" href="#">English </span>
                     
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <i  class="fa fa-caret-down" aria-hidden="true"></i>
         
         
                 </button>
+                <div class="dropdown-content" id="dropdown-content">
+                    <a href="">Spanish</a>
+                    <a href="">German</a>
+                    <a href="">Italian</a>
+                    <a href="">Urdu</a>
+
+                </div>
         
             </div>
             <div class="bellicon">
                 <i class="fa fa-bell" aria-hidden="true" type="button"></i>
         
             </div>
-            <div class="languagecontainer">
-                <button>
+            <div class="languagecontainer user">
+                <button onclick="user()">
                     <img src="images/us.jpg" height="" alt="...">
-                    <span class="language">English </span>
+                    <span class="language">Jacky </span>
                     
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
         
         
                 </button>
+                <div class="dropdown-content dc1 " id="dropdown-content1">
+                    <a href="">Innbox</a>
+                    <a href="">Profile</a>
+                    <a href="">Setting</a>
+                    <a href="">Logout</a>
+
+                </div>
         </rightnav>
         
             </nav>
@@ -67,7 +85,7 @@
            
 
             <!--side nav-->
-        <sidenav class="sidenav">
+        <sidenav class="sidenav"id="sidenav">
             <ul class="subsiddenav">
                 <li class ="menu title1">menu</li>
                 <li class ="">
@@ -81,10 +99,23 @@
                         <i class="fa fa-file-text icon" aria-hidden="true"></i>
                    
                     <span > Sample Pages</span>
-                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <i class="fa fa-plus" aria-hidden="true" onclick="spdrop()" href="javascript:void(0);"></i>
                     </a>
                 </li>
+               
+
             </ul>
+<div class="droplist1" id="droplist">
+            <ul class="droplist" >
+                <li>invoice</li>
+                <li>Starter</li>
+                <li>Pages</li>
+                <li>invoice</li>
+                <li>Check</li>
+                <li>invoice</li>
+            </ul>
+        </div>
+
             <ul>
                 <li class="components title1"> COMPONENTS</li>
 
@@ -165,7 +196,7 @@
           
                
                  
-                    <h4>Lurid > Dashboard</h4>
+                    <h4 class="lurid">Lurid > Dashboard</h4>
                   
                  
                     
@@ -187,6 +218,8 @@
                  <div><a> Cost Per Unit</a></div>
                 <div class="daily badge"><a >Daily</a></div> 
              </div1>
+             <div class="line">|</div>
+
              
              <div class="cardmid">
                 <div class="price">
@@ -207,6 +240,7 @@
 
 
             <card class="card card2 card1">
+                <div class="line">|</div>
                 <div1 class="card-body">
                     <div1 class="cardtop">
                     <div><a class="wordbreak"> Monthly  Revenue</a></div>
@@ -233,6 +267,7 @@
             </card>
            
             <card class="card card1">
+                <div class="line">|</div>
              <div1 class="card-body">
                  <div1 class="cardtop">
                  <div><a> Cost Per Unit</a></div>
@@ -257,6 +292,7 @@
             </card>
 
             <card class="card card1">
+                <div class="line">|</div>
                 <div1 class="card-body">
                     <div1 class="cardtop">
                     <div><a> Cost Per Unit</a></div>
@@ -285,12 +321,15 @@
     </row1>
     <div2121 class="row1">
         <div1 class="card card3">
+            <div class="line line2">|</div>
             <div class="cardbody cb1">
                 <div class="title">
                     <h4>Daily Sales</h4>
                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                 </div>
+                <div class="imagediv">
                 <img src="images/piechart.PNG" alt="">
+            </div>
                 <div class="cardinfo">
                     <div class="portion1">
                     <h2>5,459</h2>
@@ -310,12 +349,15 @@
 
     
         <div1 class="card card3">
+            <div class="line line2">|</div>
             <div class="cardbody cb1">
                 <div class="title">
                     <h4>Statistics</h4>
                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                 </div>
-                <img src="images/graph1.PNG" alt="">
+                <div class="imagediv">
+                <img src="images/garph2.PNG" alt="">
+            </div>
                 <div class="cardinfo">
                     <div class="portion1">
                     <h2>5,459</h2>
@@ -335,12 +377,15 @@
 
     
         <div1 class="card card3">
+            <div class="line line2">|</div>
             <div class="cardbody cb1">
                 <div class="title">
                     <h4>Total Revenue</h4>
                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                 </div>
+                <div class="imagediv">
                 <img src="images/graph2.PNG" alt="">
+            </div>
                 <div class="cardinfo">
                     <div class="portion1">
                     <h2>5,459</h2>
@@ -364,8 +409,10 @@
     
           <div class="heading">
                 <h4 class="title">Recent Customers</h4>
+                <div class="line line3">|</div>
                 <p class="subtitle">Transaction period from July to August 2022</p>
             </div>
+            <div class="scroll">
             <table class="table">
             
                 <tr class="tab1">
@@ -425,14 +472,16 @@
                   
             </table>
         </div>
+        </div>
     </div>
       <!-- row3 2-->
     
     
-       <div class="tablediv">
+       <div class="tablediv tb2">
         <div class="body">
     
           <div class="heading">
+            <div class="line">|</div>
                 <h4 class="title">Account Transactions</h4>
                 <p class="subtitle">Transaction period from July to August 2022</p>
             </div>
@@ -450,9 +499,9 @@
                         <h5>$ 7.49</h5>
                         <span>Amount</span>
                     </td>
-                    <td>
+                    <td class="visa">
                         <i class="fa fa-cc-visa" aria-hidden="true"></i>
-                        <span>Visa</span>
+                        <div class="vh" >Visa</div>
                     </td>
     
     
@@ -463,29 +512,7 @@
                         
                 </td>
                   </tr>
-                  <tr >
-                    <td >
-                        
-                        <h5>42201****1234</h5>
-                        <span>11 April 2020</span>
-                         </td>
-                    <td>
-                        <h5>$ 7.49</h5>
-                        <span>Amount</span>
-                    </td>
-                    <td>
-                        <i class="fa fa-cc-visa" aria-hidden="true"></i>
-                        <span>Visa</span>
-                    </td>
-    
-    
-                    <td>
-                        <h5>Hellen James</h5>
-                        <span>Pay</span>
-                         </td>
-                        
-                </td>
-                  </tr>
+                 
     
                  
     
@@ -499,9 +526,9 @@
                         <h5>$ 7.49</h5>
                         <span>Amount</span>
                     </td>
-                    <td>
+                    <td class="visa">
                         <i class="fa fa-cc-visa" aria-hidden="true"></i>
-                        <span>Visa</span>
+                        <div class="vh">Visa</div>
                     </td>
     
     
@@ -512,8 +539,55 @@
                         
                 </td>
                   </tr>
-                  <tr>
-                    <td class="user">
+                  
+                  <tr >
+                    <td >
+                        
+                        <h5>42201****1234</h5>
+                        <span>11 April 2020</span>
+                         </td>
+                    <td>
+                        <h5>$ 7.49</h5>
+                        <span>Amount</span>
+                    </td>
+                    <td class="visa">
+                        <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                        <div class="vh">Visa</div>
+                    </td>
+    
+    
+                    <td>
+                        <h5>Hellen James</h5>
+                        <span>Pay</span>
+                         </td>
+                        
+                </td>
+                  </tr>
+                  
+                  <tr >
+                    <td >
+                        
+                        <h5>42201****1234</h5>
+                        <span>11 April 2020</span>
+                         </td>
+                    <td>
+                        <h5>$ 7.49</h5>
+                        <span>Amount</span>
+                    </td>
+                    <td class="visa">
+                        <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                        <div class="vh">Visa</div>
+                    </td>
+    
+    
+                    <td>
+                        <h5>Hellen James</h5>
+                        <span>Pay</span>
+                         </td>
+                        
+                </td>
+                  </tr>
+                  
                        
                   </tr>
     
@@ -537,8 +611,8 @@
 
         </div>
         
-    </body>
-    </html>
+    
+  <script src="app.js"></script>
     
 </body>
 </html>
