@@ -49,7 +49,7 @@ align-items: center;
     
    
 }
-.topnav{height: 70px;}
+
 .topnav  img{
     
 height: 18px;
@@ -119,7 +119,7 @@ display: flex;
 
 .sidenav{
 
-top: 70px;
+top: 60px;
 position: fixed;
     width: 150px;
     overflow-y: scroll;
