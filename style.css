@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: "Roboto",sans-serif;
+    
 
    
 }
@@ -18,19 +19,24 @@ body{
 
 .topnav{
     
-    grid-area: topnav;
-    background-color: #3281f2;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-   width: 100%;
-    top: 0;
-    z-index: 5;
+background-color: #3281f2;
+    
+display: flex;
+    
+justify-content: space-between;
+    
+position: fixed;
+    
+width: 100%;
+    
+z-index: 5;
+    
+align-items: center;
 }
 .navcontent{
   
-    margin-left: 2em; 
-    position: relative; 
+
+  
 
 }
  .logo{
@@ -43,33 +49,22 @@ body{
     
    
 }
-.navcontent .logo img{
+.topnav{height: 70px;}
+.topnav  img{
     
-    height: 18px;
-    display: block;
-    margin: auto;
-
+height: 18px;
+    
+margin-left: 2em;
+    
+display: flex;
 }
 .rightnav{
     display: flex;
+    margin: 0px 10px;
+    align-items: center;
     justify-content: space-around;
-    width: 30%;
-    /* padding: 0px; */
-    position: absolute;
-    left: right;
-    right: 18px;
-    
-    
-    
-    
- 
-    
-    
 }
 .searchcontainer{
-    height:70px ;
-    align-items: center;
-    display: flex;
    
 }
 .searchcontainer button{
@@ -82,25 +77,19 @@ body{
 
 }
 .languagecontainer{
-    height:70px ;
-    align-items: center;
-    display: flex;
+   
 }
 
 .languagecontainer img{
-    height: 16px;   
+    height: 16px;
     padding-right: 6px;
 }
 
 .languagecontainer button{
     background-color: transparent;
-    border-style:none;
+    border-style:
+    none;
     display: flex;
-    align-items: center;
-   
-   
-   
- 
 }
 .languagecontainer span{
     color: white;
@@ -109,12 +98,10 @@ body{
 }
 .languagecontainer i{
    color: white;
-   margin-left: 4px;
+   
 }
 .bellicon {
-    height:70px ;
-    align-items: center;
-    display: flex;
+    
 }
 .bellicon i{
     color: aliceblue;
@@ -123,15 +110,25 @@ body{
 
 
 
-
+.main{
+    width: 100%;
+    margin-left: 256px;
+    margin-top: 70px;
+}
 
 
 .sidenav{
-position: relative;
-top: 73px;
+
+top: 70px;
+position: fixed;
+    width: 150px;
+    overflow-y: scroll;
+    
+    bottom: 0;
       background-color: white;
      
       width: 256px;
+      position: fixed;
    
     
   }
@@ -218,8 +215,7 @@ top: 73px;
   .row{
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
-
+    /* box-sizing: border-box; */
   }
 
 
@@ -251,7 +247,8 @@ top: 73px;
   }
   .row1{
     display: flex;
-    margin-left: 40px;
+    margin-top: 40px;
+  
     
 
   }
@@ -261,28 +258,17 @@ top: 73px;
     border: 0 solid #e9ecef;
     border-radius: 0.125rem;
     margin: 5px;
+    flex-grow: 3;
    
    
     
   }
-  .card1{
-    flex: 0 0 20%;
-    max-width: 20%;
-  }
-
-  .card3{
-    max-width: 40%;
-    flex: 0 0 25%;
-    display: flex;
-    justify-content: center;
-  }
+ 
   .card-body{
     display: flex;
     flex-direction: column;
 
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+   padding: 20px;
 
     
   }
@@ -306,17 +292,14 @@ top: 73px;
     white-space: nowrap;
 }
 .daily{
-  position: absolute;
-  left: 150px;
-  top: -1px;
+ 
 
 }
 .cardtop{
     
     display: flex;
- position: relative;
-    top: 0px;
-    margin-top: 0.5rem;
+   justify-content: space-between;
+    
     /* padding: 0px; */
     
    
@@ -377,7 +360,7 @@ top: 73px;
 .cardinfo{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     
 }
 .cardinfo h2{
@@ -388,12 +371,21 @@ top: 73px;
   
     font-size: 16px;
 }
-.portion2 h2{
-margin-left: 40px;
+.portion1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portion2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .cardbody img{
-    width: 320px;
-
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 .title h4{
     color: #495057;
@@ -402,20 +394,19 @@ margin-left: 40px;
     margin-left: 1.5em;
     font-weight: lighter;
 }
-.cb1{
-    position: relative;
-
-}
-
 .title i{
-    position: absolute;
-    
-    top: 6px;
-    right: 45px;
-    font: 20px;
-    color: #6c757d;
-    
+    padding: 10px;
 }
+
+
+.title{
+    display: flex;
+    /* flex-direction: row; */
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .table{
 
     padding: 20px;
@@ -426,13 +417,9 @@ margin-left: 40px;
 }
 .row3{
     display: flex;
-    
-    margin-top: 226px;
- 
-    
-    
-    
     flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
 }
 .tablediv{
    width: 40%;
@@ -520,15 +507,12 @@ row
     flex-direction: column;
 }
 .row{
-    position: absolute;
-    top: 70px;
+    /* position: absolute; */
+    /* top: 70px; */
+    /* margin-top: 70px; */
+    width: 100%;
 }
-.row1{
-    position: relative;
-    top: 150px;
-    margin-top: 40px;
-   
-}
+
 @media only screen and (max-width:1500){
    body {
         display: none;
