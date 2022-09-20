@@ -52,3 +52,11 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+  function spdrop2() {
+    var x = document.getElementById("droplist2");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

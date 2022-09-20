@@ -14,6 +14,17 @@ body{
 
    
 }
+.form .numberbadge{
+    background: #3281f2;
+    padding: 1px 7px;
+    border-radius: 14px;
+    margin-left: 43px;
+    font-weight: bold;
+    
+}
+.form i{
+    color: white;
+}
 .numberbadge{
     background: #3281f2;
     padding: 1px 7px;
@@ -178,13 +189,14 @@ position: fixed;
   
       
   
-  .sidenav li a{
+  .sidenav li aa{
      text-decoration: none;
      text-transform: capitalize;
      display: flex;
      display: block;
      white-space: nowrap;
      padding: 17px 23px;
+    
   }
 .dash {
       color: #0c1c32;
@@ -272,18 +284,6 @@ position: fixed;
   }
   .dashboardtitle{
 
-    body{
-    
-        margin: 0;
-        padding: 0;
-        color: #495057;
-        background-color: #f3f3f3;
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        font-family: "Roboto",sans-serif;
-        
-    
        
     }
     .container{
@@ -443,17 +443,16 @@ position: fixed;
          display: flex;
          display: block;
          white-space: nowrap;
-         padding: 17px 23px;
+         padding: 17px 28px;
       }
     .dash {
           color: #0c1c32;
           
       }
       .sidenav li span{
-        padding: 0px 42px 2px 15px;
-          color: #747a80;
-          font-size: 14.5px;
-       
+        padding: 0px 50px 3px 11px;
+        color: #747a80;
+        font-size: 15.5px;
       }
       .sidenav li{
           display: flex;
@@ -706,13 +705,14 @@ position: fixed;
     .cardbody img{
         display: flex;
         align-items: center;
-        width: 100%;
+        
     }
     .imagediv{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 334px;
+        width: 100%;
+        height: 334px;
     
     }
     .title h4{
@@ -739,7 +739,7 @@ position: fixed;
     
         padding: 20px;
       
-       
+       width: 100%;
        
         overflow: auto;
     }
@@ -747,25 +747,24 @@ position: fixed;
     
     .row3{
         display: flex;
-        flex-direction: row;
-        margin-top: 40px;
+        
+       
         /* justify-content: center; */
     }
+   
+  .tb2{
+   
+   
+    
+  }
     .tablediv{
-       width: 50%;
-      
-       margin-left: 20px;
-      
-       background-color: white;
-       /* padding: 10px; */
-       min-height: 1px;
-       border-radius: 1px;
-       padding-left: 0px;
        
-       background-color: white;
-      
-       min-height: 1px;
-       border-radius: 1px;
+       
+        background-color: white;
+        min-height: 1px;
+        border-radius: 1px;
+        width: 47.5%;
+        margin-right: 20px;
     }
     .scroll{
         overflow-x: auto;
@@ -830,10 +829,8 @@ position: fixed;
         color: #6c757d;
         font-size: 13px;
     }
-    .tb2{
-        width: 40%;
-    }
-    row
+    
+    
     
     .conatinerall{
         display: flex;
@@ -845,9 +842,7 @@ position: fixed;
         /* margin-top: 70px; */
         width: 100%;
     }
-    .tb2{
-        width: 45%;
-    }
+   
     .visa{
         padding-bottom: 8px;
     }
@@ -900,20 +895,19 @@ position: fixed;
         color: #747a80;
         font-size: 16.5px;
         margin-top: -22px;
+      } 
         
-        
-       
-        
-       
-      }
       .droplist1{
         display: none;
       }
-      .droplist li{
+      .droplist li {
         padding: 0;
-       margin-top: 20px;
-       margin-left: 32px;
-        }
+        margin-top: 26px;
+        margin-left: 80px;
+        font-size: 14.5px;
+        font-weight: 400;
+        text-transform: capitalize;
+      }
       
     @media only screen and (max-width:1500px) {
         .main{
@@ -930,12 +924,15 @@ position: fixed;
       .row3{
         width: 100%;
         flex-wrap: wrap;
+        display: flex;
       }
-      
-    }
+     
+      }
+            
+    
     @media only screen and (max-width:1100px) {
         .card{
-            width: auto;
+            width: 100%;
         }
         .row1{
             flex-wrap: wrap;
@@ -949,6 +946,16 @@ position: fixed;
         }
         .main{
             margin-left:0px;
+            
+        }
+        .row1{
+            padding-left: 40px;
+        }
+        .row3{
+            padding-left: 40px;
+        }
+        .row3 .t{
+            width: 91%;
         }
         .topnav i{
             position: relative;
@@ -983,22 +990,20 @@ position: fixed;
             margin-left: 0px;
         }
         .tablediv{
-            width: 100%;
+           
         }
         .table{
-            width: 100%;
+            
         }
        .sidenav{
       z-index: 5;
        }
        
     
-    }
     
     
-    font-size: 18px;
-    font-weight: 600;
-  }
+    
+    
   .user3{
     max-width: 60px;
     height: 50px;
@@ -1180,6 +1185,7 @@ position: fixed;
     display: flex;
     align-items: center;
     width: 100%;
+    
 }
 .imagediv{
     display: flex;
@@ -1220,23 +1226,19 @@ position: fixed;
 
 .row3{
     display: flex;
-    flex-direction: row;
-    margin-top: 40px;
+    /* flex-direction: row; */
+    /* margin-top: 40px; */
     /* justify-content: center; */
 }
 .tablediv{
    width: 50%;
-  
-   margin-left: 20px;
-  
+   /* margin-left: 20px; */
    background-color: white;
    /* padding: 10px; */
    min-height: 1px;
    border-radius: 1px;
    padding-left: 0px;
-   
    background-color: white;
-  
    min-height: 1px;
    border-radius: 1px;
 }
@@ -1303,10 +1305,7 @@ h4 .title{
     color: #6c757d;
     font-size: 13px;
 }
-.tb2{
-    width: 40%;
-}
-row
+
 
 .conatinerall{
     display: flex;
@@ -1318,9 +1317,7 @@ row
     /* margin-top: 70px; */
     width: 100%;
 }
-.tb2{
-    width: 45%;
-}
+
 .visa{
     padding-bottom: 8px;
 }
@@ -1386,6 +1383,7 @@ row
    margin-top: 20px;
    margin-left: 32px;
     }
+}
   
 @media only screen and (max-width:1500px) {
     .main{
@@ -1407,14 +1405,22 @@ row
 }
 @media only screen and (max-width:1100px) {
     .card{
-        width: auto;
+        width:100%;
     }
     .row1{
+        width: 100%;
         flex-wrap: wrap;
     }
     .row3{
-        flex-wrap: wrap;
+        
         width: 100%;
+    }
+    .row3 .tablediv{
+        
+    }
+    .row3 .tb2{
+        width: 100%;
+
     }
     .sidenav{
        display: none;
@@ -1435,12 +1441,19 @@ row
     .sidenav{
         z-index: 5;
          }
+         .row3{
+
+         }
+
 
 
 }
 
 
 @media only screen and (max-width:900px) {
+    .row{
+        width: 100%;
+    }
     .row1{
         flex-wrap: wrap;
     }
@@ -1452,7 +1465,7 @@ row
        
     }
     .main{
-        margin-left: 0px;
+        
     }
     .tablediv{
         width: 100%;
@@ -1463,7 +1476,75 @@ row
    .sidenav{
   z-index: 5;
    }
+   .imagediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 334px; */
+    width: 100%;
    
+   }
+}
+@media only screen and (max-width:580px) {
+    .main{
+
+        padding: 30px;
+    }
+    
 
 }
+@media only screen and (max-width:1316px) {
+    .tablediv{
+        
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width:650px) {
+    .tablediv{
+            
+    }
+    .hide{
+        display: none;
+        padding: 0;
+    }
+    .righttnav{
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width:1100px) {
+    .row3 .tablediv{
+     width: 96%;
+       
+    }
+    .main{
+      margin-left: -30px;
+    }
 
+}
+@media only screen and (max-width:820px) {
+    .row3 .tablediv{
+       
+    }
+    .row3{
+        width: 100%;
+    }
+.main{
+    padding-left: -20px;
+}
+.card{
+    width: 300px;
+}
+}
+@media only screen and (max-width:600px) {
+    .row3 .tablediv{
+        width: 93%;
+       
+    }
+    
+}
+@media only screen and (max-width:400px) {
+    .tb2{
+        overflow-x: auto;
+       
+       
+    }}
