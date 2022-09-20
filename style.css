@@ -14,6 +14,9 @@ body{
 
    
 }
+.sidenav{
+    display: block;
+}
 .hideimg2{
     display:none;
 }
@@ -718,6 +721,11 @@ position: fixed;
         height: 334px;
     
     }
+    .imagediv img{
+        width: 100%;
+    }
+
+
     .title h4{
         color: #495057;
         font-family: "Roboto",sans-serif;
@@ -911,6 +919,27 @@ position: fixed;
         font-weight: 400;
         text-transform: capitalize;
       }
+
+.footer{
+    border-top: 1px solid #dee2e6;
+    bottom: 0;
+    padding: 19px 12px 20px;
+
+    right: 0;
+    color: #6c757d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 16px;
+    padding-right: 25px;
+    flex-wrap: wrap;
+   
+}
+
+
+
+
       
     @media only screen and (max-width:1500px) {
         .main{
@@ -973,6 +1002,7 @@ position: fixed;
         .sidenav{
             z-index: 5;
              }
+             
     
     
     }
@@ -1522,6 +1552,9 @@ h4 .title{
     .main{
       margin-left: -30px;
     }
+    .sidenav{
+       
+    }
 
 }
 @media only screen and (max-width:820px) {
@@ -1566,3 +1599,8 @@ h4 .title{
 
 
 }
+@media only screen and (max-width:1186px) {
+    .imagediv img {
+        width: 400px;
+    }}
+    
