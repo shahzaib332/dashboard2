@@ -201,7 +201,7 @@ position: fixed;
      display: flex;
      display: block;
      white-space: nowrap;
-     padding: 17px 23px;
+     padding: 21px 30px;
     
   }
 .dash {
@@ -210,16 +210,21 @@ position: fixed;
   }
   .sidenav li span{
     padding: 0px 42px 2px 15px;
-      color: #747a80;
+      
       font-size: 14.5px;
    
   }
+  .fa.fa-th.icon.dashicon {
+    color:#3281f2;
+}
+  
   .sidenav li{
       display: flex;
       align-items: center;
+      position: relative;
       
   }
-  .sidenav li a i{
+  .sidenav li aa i{
     display: inline-block;
     min-width: 1rem;
     padding-bottom: 0.125em;
@@ -234,7 +239,30 @@ position: fixed;
   .sidenav li i{
       font-size: 12px;
       color: #747a80;
+      
   }
+  .sidenav .icon1{
+    position: absolute;
+    top: 24px;
+    right:29px;
+  
+  }
+  .nobadge.icon1 {
+    background: red;
+    color: white;
+    font-weight: bold;
+    /* padding: 0px 1px 0px 0px; */
+    border-radius: 20px;
+    padding: 0px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+   
+  }
+  .no1.icon1{
+    background-color: #3281f2;
+  }
+
   .sidenav li i.icon{
       font-size: 20px;
    
@@ -560,10 +588,18 @@ position: fixed;
       }
       .line{
         position: absolute;
-        left: 2px;
-        font-size: 27px;
+        left: -3px;
+        font-size: 29px;
         color: #3281f2;
         top: 14px;
+      }
+      
+      .lined{
+        font-size: 40px;
+        top: 10px;
+        left: -5px;
+       
+
       }
       .line2{
         top: 19px;
@@ -878,6 +914,8 @@ position: fixed;
         top: 46px;
         width: 180px;
         right: 0;
+        border: 1px solid white;
+        box-shadow: 6px white;
     }
     
     .dropdown-content a{
@@ -906,6 +944,8 @@ position: fixed;
         color: #747a80;
         font-size: 16.5px;
         margin-top: -22px;
+        border: 1px solid white;
+        box-shadow: 6px white;
       } 
         
       .droplist1{
