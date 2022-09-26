@@ -9,11 +9,11 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
+
         
 
 
-</div>
+
 
         <div class="container">
 
@@ -22,7 +22,7 @@
 
             <nav class="topnav">
                  
-                        <img src="images/logo-light.png" alt="loading" href="index.html" class="hideimg1">
+                        <img src="images/logo-light.png" alt="loading" href="index.html" class="logo">
                         <img src="assets/images/logo-small.png"class="hideimg2"alt="" height="24">
                    
                <div class="bar">
@@ -65,7 +65,7 @@
             </div>
             <div class="languagecontainer user">
                 <button onclick="user()">
-                    <img src="images/us.jpg" height="" alt="...">
+                    <img src="https://myrathemes.com/lurid/layouts/blue-horizontal/assets/images/users/avatar-1.jpg" height="" alt="...">
                     <span class="language hide">Jacky </span>
                     
                     <i class="fa fa-caret-down hide" aria-hidden="true"></i>
@@ -89,11 +89,12 @@
         
             </nav>
 
+         
            
 
             <!--side nav-->
-        <sidenav class="sidenav"id="sidenav">
-            <ul class="subsiddenav">
+    <!--  <sidenav class="sidenav"id="sidenav">
+            <ul1 class="subsiddenav">
                 <li class ="menu title1">menu</li>
                 <li class ="">
                     <div class="line lined">|</div>
@@ -113,7 +114,7 @@
                 </li>
                
 
-            </ul>
+            </ul1>
 <div class="droplist1" id="droplist">
             <ul class="droplist" >
                 <li>invoice</li>
@@ -211,8 +212,78 @@
             </ul>
 
         </sidenav>
+        -->  
+        
 
         <div class="main">
+
+            <div class="nav" id="nav">
+          
+                <ul class="bottombar">
+               
+                <li>
+                    <i class="fa fa-home faicon" aria-hidden="true"></i>
+                    
+                    Dashboard</li>
+                 
+                <li class="ui" id="ui" onclick="spdrop()">
+                    <i class="fa fa-suitcase faicon " aria-hidden="true"></i>
+                    UI Elements
+                    <i class="fa fa-caret-down faicon2" aria-hidden="true"></i>
+                </li>
+    
+                <li class="dropdown-menu" id="droplist" >
+                    <a href="ui-buttons.html" class="dropdown-item">Buttons</a>
+                    <a href="ui-cards.html" class="dropdown-item">Cards</a>
+                    <a href="ui-carousel.html" class="dropdown-item">Carousel</a>
+                    <a href="ui-embeds.html" class="dropdown-item">Embeds</a>
+                    <a href="ui-general.html" class="dropdown-item">General</a>
+                    <a href="ui-grid.html" class="dropdown-item">Grid</a>
+                    <a href="ui-media-objects.html" class="dropdown-item">Media Objects</a>
+                    <a href="ui-modals.html" class="dropdown-item">Modals</a>
+                    <a href="ui-progressbars.html" class="dropdown-item">Progress Bars</a>
+                    <a href="ui-tabs.html" class="dropdown-item">Tabs</a>
+                    
+                </li>
+        
+                <li class onclick="spdrop2()">
+                    <i class="fa fa-window-restore faicon" aria-hidden="true"></i>
+                    Sample Pages
+                    <i class="fa fa-caret-down faicon2" aria-hidden="true"></i>
+                </li>
+                <li class="dropdown-menu2" id="droplist2" >
+                    <a href="ui-buttons.html" class="dropdown-item">Buttons</a>
+                    <a href="ui-cards.html" class="dropdown-item">Cards</a>
+                    <a href="ui-carousel.html" class="dropdown-item">Carousel</a>
+                    <a href="ui-embeds.html" class="dropdown-item">Embeds</a>
+                    <a href="ui-general.html" class="dropdown-item">General</a>
+                    <a href="ui-grid.html" class="dropdown-item">Grid</a>
+                    <a href="ui-media-objects.html" class="dropdown-item">Media Objects</a>
+                    <a href="ui-modals.html" class="dropdown-item">Modals</a>
+                    <a href="ui-progressbars.html" class="dropdown-item">Progress Bars</a>
+                    <a href="ui-tabs.html" class="dropdown-item">Tabs</a>
+                    
+                </li>
+                <li>
+                    <i class="fa fa-bar-chart faicon" aria-hidden="true"></i>
+                    Charts
+                    <i class="fa fa-caret-down faicon2" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <i class="fa fa-circle-o-notch faicon" aria-hidden="true"></i>
+                    Forms
+                    <i class="fa fa-caret-down faicon2" aria-hidden="true"></i>
+                </li>
+                <li>
+                <i class="fa-file-text-o faicon" ></i>
+                    More
+                    <i class="fa fa-caret-down faicon2" aria-hidden="true"></i>
+                </li>
+    
+                </li>
+              </ul>
+          
+            </div>
             <div11 class="row">
                
                 <h4 class="dashboardtitle">Dashboard</h4>
@@ -642,7 +713,7 @@
 
 
         </div>
-        
+    
         
     
   <script src="app.js"></script>

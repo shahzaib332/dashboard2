@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 
 body{
 
@@ -14,6 +14,10 @@ body{
 
    
 }
+
+
+
+
 .sidenav{
     display: block;
 }
@@ -65,6 +69,7 @@ width: 100%;
 z-index: 5;
     
 align-items: center;
+cursor: pointer;
 }
 .navcontent{
   
@@ -96,6 +101,7 @@ display: flex;
     margin: 0px 10px;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
 }
 .searchcontainer{
    
@@ -148,11 +154,11 @@ display: flex;
 
 .main{
     width: 100%;
-    margin-left: 256px;
-    margin-top: 50px;
-    padding: 20px;
-    
+   
+        margin-left: 80px; 
+    margin-top: 110px; 
 }
+    
 
 
 .sidenav{
@@ -370,12 +376,11 @@ position: fixed;
     }
     .rightnav{
         display: flex;
-        margin: 0px 10px;
+        margin: 0px 50px;
         align-items: center;
         justify-content: space-around;
     }
     .searchcontainer{
-       
     }
     .searchcontainer button{
         background-color: transparent;
@@ -395,6 +400,7 @@ position: fixed;
     .languagecontainer img{
         height: 16px;
         padding-right: 8px;
+        margin-top: 1px;
     }
     
     .languagecontainer button{
@@ -402,6 +408,7 @@ position: fixed;
         border-style:
         none;
         display: flex;
+        align-items: center;
     }
     .languagecontainer span{
         color: white;
@@ -422,13 +429,7 @@ position: fixed;
     
     
     
-    .main{
-        width: 100%;
-        margin-left: 256px;
-        margin-top: 50px;
-        padding: 40px;
-        
-    }
+   
     
     
     .sidenav{
@@ -838,9 +839,13 @@ position: fixed;
         
     }
     .user img{
-       max-width: 40px;
-        border-radius: 20px;
-        padding-right: 4px;
+        height: 36px;
+        width: 36px;
+        background-color: rgba(255,255,255,0.5);
+        padding: 3px;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 6px;
     }
     .location{
         white-space: nowrap;
@@ -915,7 +920,9 @@ position: fixed;
         width: 180px;
         right: 0;
         border: 1px solid white;
-        box-shadow: 6px white;
+      
+        box-shadow: 0 4px 18px rgb(0 0 0 / 11%); 
+        /* z-index: 999999999; */
     }
     
     .dropdown-content a{
@@ -977,13 +984,79 @@ position: fixed;
    
 }
 
+ul.bottombar {
+    display: flex;
+    margin-left: 18px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    z-index: 5;
+    margin-left: 60px;
+    width: 100%;
+}
+ul.bottombar li{
+    font-size: 18.75px;
+    list-style: none;
+    color: #747a80;
+    padding: 0px 50px 0 0;
+}
+.faicon {
+    /* color: transparent; */
+    width: 23px;
+    font-size: 22px;
+    /* padding-right: 11px; */
+    padding-right: 11px;
+}
+
+ul.bottombar li.ui:hover .dropdown-menu {
+    display: block;
+   
+}
+a.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.4rem 1.2rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+    display: block;
+
+padding: 0.7rem 1.2rem;
+
+font-weight: 400;
+color: #212529;
+text-align: inherit;
+white-space: nowrap;
+background-color: transparent;
+border: 0;
+text-decoration: none;
+
+width: 144px;
 
 
+}
+
+
+
+
+
+@media only screen and (min-width:1100px) {
+    img.logo{
+        margin-left: 5em;
+    }
+    
+}
 
       
     @media only screen and (max-width:1500px) {
         .main{
-            padding: 30px;
+            width: 100%;
+          
+          
         }
         .card{
             width: 250px;
@@ -1008,6 +1081,7 @@ position: fixed;
         }
         .row1{
             flex-wrap: wrap;
+           
         }
         .row3{
             flex-wrap: wrap;
@@ -1017,15 +1091,10 @@ position: fixed;
            display: none;
         }
         .main{
-            margin-left:0px;
+          
             
         }
-        .row1{
-            padding-left: 40px;
-        }
-        .row3{
-            padding-left: 40px;
-        }
+        
         .row3 .t{
             width: 91%;
         }
@@ -1033,7 +1102,7 @@ position: fixed;
             position: relative;
         }
         .bar i{
-            display: block;
+            
             position: absolute;
             font: 20px;
             left: 140px;
@@ -1060,7 +1129,7 @@ position: fixed;
            
         }
         .main{
-            margin-left: 0px;
+            
         }
         .tablediv{
            
@@ -1460,7 +1529,8 @@ h4 .title{
   
 @media only screen and (max-width:1500px) {
     .main{
-        padding: 30px;
+       padding: 40px;
+        
     }
     .card{
         width: 250px;
@@ -1505,7 +1575,7 @@ h4 .title{
         position: relative;
     }
     .bar i{
-        display: block;
+      
         position: absolute;
         font: 20px;
         left: 140px;
@@ -1558,14 +1628,19 @@ h4 .title{
    
    }
 }
-@media only screen and (max-width:580px) {
+
+
+
+
+
+
     .main{
 
         padding: 30px;
     }
     
 
-}
+
 @media only screen and (max-width:1316px) {
     .tablediv{
         
@@ -1587,10 +1662,15 @@ h4 .title{
 @media only screen and (max-width:1100px) {
     .row3 .tablediv{
      width: 96%;
+     margin-left: -9px;
+
        
     }
+    .row3{
+        margin-left: 10px;
+    }
     .main{
-      margin-left: -30px;
+      
     }
     .sidenav{
        
@@ -1618,7 +1698,7 @@ h4 .title{
     }
     
 }
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:399px) {
     .tb2{
         overflow-x: auto;
        
@@ -1634,7 +1714,10 @@ h4 .title{
         display: block;
     }
     .bar i{
-       left: 25px;
+        position: absolute;
+       left: 18px;
+       
+    
     }
 
 
@@ -1643,4 +1726,224 @@ h4 .title{
     .imagediv img {
         width: 400px;
     }}
+    @media only screen and (min-width:1500px) {
+        .main{
+            width: 100%;
+            padding: 50px;
+        }
+
+    }
+    @media only screen and (max-width:1123px) {
+        img.logo{
+            margin-left: 3em;
+        }
+       .main ul.bottombar{
+        padding: 0;
+        /* margin-left: 30px; */
+        
+        width: 100%;
+        }
+      .main  ul.bottombar li{
+           
+        }
+        .main{
+            margin-left: 20px;
+        }
+        
+       
+        
+        
+        
+
+    }
+    @media only screen and (max-width:1070px) {
+        img.logo{
+            margin-left: 1em;
+        }
+        .bottombar {
+            display: flex;
+            width: 100%;
+            /* margin-left: 20px; */
+            width: 100%;
+            width: 100%;
+          
+            justify-content: start;
+        }
+        .bottombar li{
+            margin-left: -35px;
+            padding-left: 20px;
+        }
+        .main {
+            margin-left: -12px;
+        }
+           
+    }
+    @media only screen and (max-width:980px) {
+
+        .nav {
+            /* position: fixed; */
+            width: 100%;
+            /* top: 70px; */
+            background-color: white;
+            -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+            box-shadow: 0 1px 2pxrgba(0,0,0,0.075);
+            z-index: 1;
+            left: 0px;
+            margin-left: margin;
+            margin-left: -15px;
+            max-height: 390px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .main{
+            margin-top: 30px;
+        }
+        .bar i{
+            display: block;
+            position: absolute;
+            font: 20px;
+           
+            top: 24px;
+        }
+        ul.bottombar{
+            display: flex;
+            flex-direction: column;
+            margin-top: 0px;
+        }
+        ul.bottombar li{
+           margin: 20px;
+           position: relative;
+           margin-left: -19px;
+           font-size: 18.75px;
+           font-weight: 400;
+           cursor: pointer;
+           
+        }
+        ul.bottombar li:hover{
+            color: black;
+
+        }
+        .faicon2{
+            position: absolute;
+            top: 4px;
+            right: 50px;
+            color: rgb(66, 66, 66);
+        }
+        .faicon {
+            /* color: transparent; */
+            width: 23px;
+            font-size: 20px;
+            margin: 3px;
+
+    }
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        /* top: 66px; */
+        background-color: transparent;
+        
+       
+        display: none;
+      
+        position: absolute;
+        z-index: 1000;
+        
+}
+.dropdown-menu2{
+    display: none;
+
+}
+
+
+    }
     
+
+    @media only screen and (min-width:980px) {
+        
+        .nav{
+            position: fixed;
+            width: 100%;
+            top: 70px;
+            background-color: white;
+            -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+            box-shadow: 0 1px 2pxrgba(0,0,0,0.075);
+            z-index: 1;
+            left: 0;
+        }
+        
+      
+      
+        .dropdown-menu {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+             top: 68px; 
+            background-color: white;
+             left: 213px; 
+             display: none;
+            
+             box-shadow: 0 4px 18px rgb(0 0 0 / 11%); 
+          
+            margin: 0;
+            
+            z-index: 1000;
+            width: 120px;
+         
+    }
+        
+        
+        a.dropdown-item {
+            display: block;
+            width: 100%;
+            padding: 0.4rem 1.2rem;
+            clear: both;
+            font-weight: 400;
+            color: #212529;
+            text-align: inherit;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+            text-decoration: none;
+            display: block;
+      
+        padding: 0.7rem 1.2rem;
+        /* clear: both; */
+        font-weight: 400;
+        color: #212529;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+        text-decoration: none;
+        /* padding-top: 21px; */
+        width: 144px;
+    
+    
+        }
+        .dropdown-menu2 {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+             top: 68px; 
+             display: none;
+            background-color: white;
+             left: 434px; 
+           
+             box-shadow: 0 4px 18px rgb(0 0 0 / 11%); 
+           
+            -webkit-animation-duration: .3s;
+            animation-duration: .3s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            margin: 0;
+            
+            z-index: 1000;
+            width: 120px;
+            
+         
+    }
+
+    }
+
+
